@@ -16,8 +16,8 @@ install:
 
 script:
     - sh ex1.sh
-    - sh ex2.sh
     - "echo $var"
+    - sh ex2.sh
 
 after_success:
     - "[ ! -z $COVERAGE ] && coveralls || true"
